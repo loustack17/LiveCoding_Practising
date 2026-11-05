@@ -1,2 +1,2 @@
-# DSA_2025
-For LeetCode practising with C#
+# DSA_Practising
+For LeetCode practising with C# and Python
