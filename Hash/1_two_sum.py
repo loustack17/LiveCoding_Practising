@@ -12,3 +12,14 @@ class Solution:
             for j in range(i+1, len(nums)):
                 if remaining == nums[j]:
                     return [i, j]
+
+    def twoSum2(self, nums: list[int], target: int) -> list[int]:
+
+        match = {}
+        for i, num in enumerate(nums):
+            remaining = target - num
+
+            if remaining in match:
+               return [match[remaining], i]
+
+            match[num] = i
